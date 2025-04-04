@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio | Web Development</title>
+  </head>
+
+  <body>
+    <div class="mouse-follower"></div>
+    <nav>
+      <p class="logo">DHRUV VERMA</p>
+      <p class="mid-nav">
+        <i class="ri-message-2-fill" onclick="toggleChat()"></i>
+      </p>
+    </nav>
+    <div class="chat-container" id="chat-container">
+      <div class="chat-header">
+        Chat with Dhruv's Bot
+        <button class="close-chat">&times;</button>
+      </div>
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type Yes or No" />
+        <button class="send-btn" onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+    <div id="main">
+      <section id="hero-section">
+        <h1 class="animated-text">
+          <span>h</span>
+          <span>e</span>
+          <span>l</span>
+          <span>l</span>
+          <span>o</span>
+        </h1>
+        <div class="container-1">
+          <p>i am a fullstack</p>
+          <p>
+            <span class="dev-text">web</span>
+            <span class="dev-text">DEVEL</span>
+            <span class="circle"></span>
+            <span class="dev-text">PER</span>
+          </p>
+        </div>
+      </section>
+      <!-- HTML Structure for the About Section -->
+      <section id="about-section">
+        <div class="about-container">
+          <div class="about-header">
+            <h2 class="about-title">ABOUT <span class="highlight">ME</span></h2>
+          </div>
+
+          <div class="about-content">
+            <div class="image-container">
+              <div class="image-wrapper">
+                <img
+                  src="./assets/bdf66383657c76085091c2aa886edc04.jpg"
+                  alt="my image"
+                />
+              </div>
+            </div>
+
+            <div class="about-text-container">
+              <div class="big-skills">
+                <span class="skill-highlight">CREATIVE</span>
+                <span class="skill-highlight">DEVELOPER</span>
+                <span class="skill-highlight">PASSIONATE</span>
+              </div>
+
+              <div class="about-description">
+                <p>
+                  Hello! I'm a passionate web developer with a keen eye for
+                  creating beautiful, functional websites.
+                </p>
+                <p>
+                  With 1 year of experience in the field, I've honed my skills
+                  in both front-end and back-end development, allowing me to
+                  craft complete web solutions from the ground up.
+                </p>
+                <p>
+                  My goal is to build intuitive, user-friendly interfaces that
+                  not only look great but also provide seamless functionality.
+                </p>
+              </div>
+
+              <div class="skills-container">
+                <div class="skill-category">
+                  <h3>Front-End Development</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Responsive Design</span>
+                  </div>
+                </div>
+
+                <div class="skill-category">
+                  <h3>Back-End Development</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">RESTful APIs</span>
+                  </div>
+                </div>
+
+                <div class="skill-category">
+                  <h3>Tools & Methods</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Agile/Scrum</span>
+                    <span class="skill-tag">Problem-Solving</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="project-section">
+        <h2>PROJECTS</h2>
+        <div class="project-container">
+          <div class="project">
+            <div class="project-left-box">
+              <video
+                src="./assets/videos/large-thumbnail20240224-16319-1ylby7p.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+              <p class="project-name">ECOMMERCE WEBSITE</p>
+            </div>
+            <div class="project-right-box">
+              <p class="about-project">
+                This eCommerce website allows users to browse and purchase
+                products with a sleek UI, built with modern web technologies for
+                scalability.
+              </p>
+              <p class="tech-stack-names">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+              </p>
+              <div class="buttons">
+                <a href="https://hmclonewebsite.vercel.app/" class="visit-btn"
+                  >Visit this site</a
+                >
+                <a
+                  href="https://github.com/MakotoIsamu/HM_WEBSITE"
+                  class="visit-github-btn"
+                  >View Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-right-box">
+              <p class="about-project">
+                A social media platform where users can create profiles, share
+                posts, and engage with others through likes and comments.
+              </p>
+              <p class="tech-stack-names">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+              </p>
+              <div class="buttons">
+                <a href="https://vaartalapkaro.vercel.app/" class="visit-btn"
+                  >Visit this site</a
+                >
+                <a
+                  href="https://github.com/MakotoIsamu/social_media_app"
+                  class="visit-github-btn"
+                  >View Github</a
+                >
+              </div>
+            </div>
+            <div class="project-left-box">
+              <video
+                src="./assets/videos/large-thumbnail20230525-31058-904mov.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+              <p class="project-name">SOCIAL MEDIA WEBSITE</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-left-box">
+              <video
+                src="./assets/videos/large-thumbnail20240513-26959-1i4yvmo.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+              <p class="project-name">CHATBUDDY CHATBOT</p>
+            </div>
+            <div class="project-right-box">
+              <p class="about-project">
+                ChatBuddy is an AI-powered chatbot that helps users with quick
+                answers, task automation, and real-time conversations using
+                natural language.
+              </p>
+              <p class="tech-stack-names">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+              </p>
+              <div class="buttons">
+                <a href="https://chattbuddy.vercel.app/" class="visit-btn"
+                  >Visit this site</a
+                >
+                <a
+                  href="https://github.com/DhruvVermaCodess/ChatBuddy"
+                  class="visit-github-btn"
+                  >View Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-right-box">
+              <p class="about-project">
+                A video streaming app offering users the ability to stream
+                high-quality videos with real-time content updates and
+                recommendations.
+              </p>
+              <p class="tech-stack-names">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+              </p>
+              <div class="buttons">
+                <a href="https://your-website-link.com" class="visit-btn"
+                  >Visit this site</a
+                >
+                <a
+                  href="https://github.com/your-repo-link"
+                  class="visit-github-btn"
+                  >View Github</a
+                >
+              </div>
+            </div>
+            <div class="project-left-box">
+              <video
+                src="./assets/videos/29d1e8564fc10e142cfc1068c1fe840f.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+              <p class="project-name">VIDEO STREAMING APP</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills-section">
+        <div class="skills-section-p">
+          <p>pursuing</p>
+          <p>BCA from Manipal</p>
+          <p>🎓and done💻</p>
+          <p>diploma in full stack</p>
+          <p>web dev from Masai</p>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
