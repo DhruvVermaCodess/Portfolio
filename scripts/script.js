@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Original scroll animations
   gsap.from("#about-section .something", createScrollTrigger("#about-section .something", { scale: 0, end: "top 70%", scrub: 1 }));
   gsap.from(".asd p", createScrollTrigger(".something p", { duration: 1, y: -200, stagger: 0.3, end: "top 50%", scrub: 1 }));
-  gsap.from("#project-section h2", createScrollTrigger("#project-section h2", { duration: 1, x: -300, start: "top 50%", end: "top 30%", scrub: 1 }));
+  gsap.from("#project-section h2", createScrollTrigger("#project-section h2", { duration: 1, x: -500, start: "top 90%", end: "top 30%", scrub: 1 }));
   gsap.from("#skills-section p", createScrollTrigger("#skills-section", { y: -100, duration: 1, stagger: 0.2, end: "top 5%", scrub: 1 }));
   
   // About Section Animations - For the new design
